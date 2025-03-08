@@ -19,7 +19,7 @@ const SideNavBar = () => {
     <>
       {/* Mobile Nav Button */}
         {/* Logo Section */}
-        <div className="pt-5 border-b border-gray-800 w-full bg-black text-white lg:hidden">
+        <div className="relative pt-5 border-b border-gray-800 w-full bg-black text-white lg:hidden">
           <div className="flex items-center justify-center gap-2">
             <Camera className="w-8 h-8 text-cyan-400" />
             <h1 className="text-2xl font-bold">PORTRETO</h1>
@@ -27,7 +27,7 @@ const SideNavBar = () => {
           <p className="text-center text-sm text-gray-400 my-4">PHOTOGRAPHY THEME</p>
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className="fixed top-4 right-4 z-50 p-2 rounded-lg bg-gray-800"
+            className="absolute top-4 right-4 z-50 p-2 rounded-lg bg-gray-800"
           >
             {isOpen ? <X className="w-6 h-6 text-white" /> : <Menu className="w-6 h-6 text-white" />}
           </button>
@@ -40,7 +40,7 @@ const SideNavBar = () => {
       <nav className={`
         fixed lg:static 
         ${isOpen ? 'top-0 left-0' : '-top-full lg:top-0'} 
-        w-full lg:w-64 
+        w-full lg:w-90
         h-screen 
         bg-black
         text-white 
@@ -49,7 +49,7 @@ const SideNavBar = () => {
         z-40
       `}>
         {/* Logo Section */}
-        <div className="p-6 border-b border-gray-800">
+        <div className="p-6 border-b border-gray-800 w-full">
           <div className="flex items-center justify-center gap-2">
             <Camera className="w-8 h-8 text-cyan-400" />
             <h1 className="text-2xl font-bold">PORTRETO</h1>

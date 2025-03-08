@@ -20,7 +20,7 @@ const InfiniteCarouselCard = ({title, tags, desc, img, url}: {title: string, tag
                 <p className='text-sm text-cyan-600 mb-5'>{tags}</p>
                 <p className='text-sm text-white' style={{lineHeight: '20px'}}>{desc}</p>
             </div>
-            <a className='text-white text-sm bg-cyan-600 p-2 mt-2' href={url}>Read More</a>   
+            <a className='text-white text-sm bg-cyan-600 p-2 mt-2' href={url}>View Post</a>   
         </div>
     </div>
     );

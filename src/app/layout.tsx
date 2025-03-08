@@ -26,9 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <div className="flex flex-col lg:flex-row min-h-screen bg-gray-100 max-w-screen overflow-hidden">
+      <div className="flex flex-col lg:flex-row lg:h-screen bg-gray-100 w-screen overflow-x-hidden lg:overflow-y-hidden">
         <SideNavBar/>
-        {children}
+        <div className="overflow-y-auto w-full">
+          {children}
+        </div>
         </div>
       </body>
     </html>
