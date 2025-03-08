@@ -1,0 +1,15 @@
+
+.hoverContent{
+    display: none;
+}
+
+.carouselCard:hover{
+    cursor: pointer;
+}
+
+.carouselCard:hover .defaultContent{
+    display: none;
+}
+.carouselCard:hover .hoverContent{
+    display: flex;
+}
